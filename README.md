@@ -1,2 +1,2 @@
-# pinbox
-sns composed of interest tags
+# PinBox
+### sns composed of interest tags
