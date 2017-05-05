@@ -1,6 +1,5 @@
 package com.slopcat.pinbox
 
-import android.app.TaskStackBuilder
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
@@ -18,14 +17,9 @@ class BoxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_box)
+
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
-
-        val fab = findViewById(R.id.fab) as FloatingActionButton
-        fab.setOnClickListener(View.OnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        })
 
         val drawer = findViewById(R.id.drawer_layout) as DrawerLayout
         val toggle = ActionBarDrawerToggle(
@@ -47,15 +41,15 @@ class BoxActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.box, menu)
+        // menuInflater.inflate(R.menu.box, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
-        if (id == R.id.action_settings) {
-            return true
-        }
+        //if (id == R.id.action_settings) {
+        //    return true
+        //}
         return super.onOptionsItemSelected(item)
     }
 
