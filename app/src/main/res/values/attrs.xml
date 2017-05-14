@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinSelectButton">
+        <attr name="text" format="reference|string" />
+        <attr name="active" format="reference|boolean" />
+
+        <attr name="text_color_normal" format="reference|color" />
+        <attr name="text_color_select" format="reference|color" />
+    </declare-styleable>
+</resources>

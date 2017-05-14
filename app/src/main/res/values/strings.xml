@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">PinBox</string>
-    <string name="title_activity_box">BoxActivity</string>
+    <string name="app_name">핀 박스</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="action_notification">공지</string>
     <string name="action_settings">옵션</string>
-    <!-- 사용자 -->
+
     <string name="action_boxs">박스s</string>
     <string name="action_pins">핀s</string>
+    <string name="action_write">글쓰기</string>
+    <string name="action_bin_box">핀 박스</string>
 </resources>
