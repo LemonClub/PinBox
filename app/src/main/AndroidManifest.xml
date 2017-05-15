@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BoxOptionActivity"></activity>
+        <activity android:name=".BoxOptionActivity" />
+        <activity android:name=".BoxWriteActivity"></activity>
     </application>
 
 </manifest>

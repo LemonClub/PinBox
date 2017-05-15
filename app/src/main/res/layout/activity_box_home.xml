@@ -8,6 +8,26 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <!-- Pin UI -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.slopcat.pinbox.PinHeader
+            android:id="@+id/pin_header_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pin_left_active="true"
+            app:pin_left_color="@color/pin_gray"
+            app:pin_left_text="메뉴"
+            app:pin_right_active="true"
+            app:pin_right_color="@color/pin_gray"
+            app:pin_right_text="검색"
+            app:pin_underline="false">
+
+        </com.slopcat.pinbox.PinHeader>
+    </RelativeLayout>
+
     <!-- Pin Nav -->
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
@@ -115,7 +135,7 @@
                     android:orientation="vertical">
 
                     <com.slopcat.pinbox.PinSelectButton
-                        android:id="@+id/pin_pins"
+                        android:id="@+id/pin_home"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -153,4 +173,5 @@
             </LinearLayout>
         </RelativeLayout>
     </android.support.design.widget.NavigationView>
+
 </android.support.v4.widget.DrawerLayout>
