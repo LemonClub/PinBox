@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+<<<<<<< HEAD
         <activity android:name=".BoxHomeActivity">
+=======
+
+        <activity android:name=".MainActivity">
+>>>>>>> 963991f0a1ba689b68c11706594abf63f4fb5720
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
