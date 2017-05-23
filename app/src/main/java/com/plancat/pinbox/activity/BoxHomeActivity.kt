@@ -1,12 +1,14 @@
-package com.slopcat.pinbox
+package com.plancat.pinbox.activity
 
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import kotlinx.android.synthetic.main.activity_box_home.*
-import kotlinx.android.synthetic.main.pin_header_ui.view.*
 import android.content.Intent
+import com.plancat.pinbox.ui.PinSelectButton
+import com.plancatlog.pinbox.R
+import kotlinx.android.synthetic.main.activity_box_home.*
+import kotlinx.android.synthetic.main.pin_header_ui.*
 
 
 class BoxHomeActivity : AppCompatActivity() {
@@ -15,6 +17,7 @@ class BoxHomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_box_home)
+
         pinboxSelectors.add(pin_boxs)
         pinboxSelectors.add(pin_home)
         pinboxSelectors.add(pin_nows)
@@ -53,10 +56,11 @@ class BoxHomeActivity : AppCompatActivity() {
 
     fun initPinHeader() {
         // HOME
-        pin_header_home.pin_header_left.setOnClickListener {
+        pin_header_left.setOnClickListener {
             pinHeaderMenu()
         }
-        pin_header_home.pin_header_right.setOnClickListener {
+
+        pin_header_right.setOnClickListener {
             pinHeaderSearch()
         }
     }
@@ -76,15 +80,15 @@ class BoxHomeActivity : AppCompatActivity() {
     }
 
     fun pinBoxHide() {
-        this.drawer_layout.closeDrawer(GravityCompat.START)
+        drawer_layout.closeDrawer(GravityCompat.START)
     }
 
     fun pinBoxShow() {
-        this.drawer_layout.openDrawer(GravityCompat.START)
+        drawer_layout.openDrawer(GravityCompat.START)
     }
 
     override fun onBackPressed() {
-        if (this.drawer_layout.isDrawerOpen(GravityCompat.START))
+        if (drawer_layout.isDrawerOpen(GravityCompat.START))
             pinBoxHide()
         else
             super.onBackPressed()

@@ -1,4 +1,5 @@
-package com.slopcat.pinbox
+package com.plancat.pinbox.ui
+
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -8,6 +9,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import kotlinx.android.synthetic.main.pin_header_ui.view.*
+import com.plancatlog.pinbox.R
 
 /**
  * Created by slopcat99 on 2017-05-16.
@@ -40,9 +42,9 @@ open class PinHeader : LinearLayout {
         val li = context.getSystemService(inflaterService) as LayoutInflater
         val v = li.inflate(R.layout.pin_header_ui, this, false)
         this.addView(v)
-        pinRightText = v.pin_header_right
-        pinLeftText = v.pin_header_left
-        pinLine = v.pin_header_line
+        pinRightText = pin_header_right
+        pinLeftText = pin_header_left
+        pinLine = pin_header_line
     }
 
     fun getAttrs(attrs: AttributeSet) {

@@ -4,4 +4,12 @@
     <color name="pin_blue">#47cafd</color>
     <color name="pin_gray">#636363</color>
     <color name="pin_red">#f28383</color>
+
+    <color name="white">#ffffff</color>
+    <color name="feed_comment_bg">#eceef1</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
 </resources>
