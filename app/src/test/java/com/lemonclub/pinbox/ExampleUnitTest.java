@@ -1,4 +1,4 @@
-package com.slopcat.pinbox;
+package com.lemonclub.pinbox;
 
 import org.junit.Test;
 

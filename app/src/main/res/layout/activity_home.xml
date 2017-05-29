@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.slopcat.pinbox.PinHeader
+        <com.lemonclub.pinbox.ui.PinHeader
             android:id="@+id/pin_header_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,8 +25,9 @@
             app:pin_right_text="검색"
             app:pin_underline="false">
 
-        </com.slopcat.pinbox.PinHeader>
+        </com.lemonclub.pinbox.ui.PinHeader>
     </RelativeLayout>
+
 
     <!-- Pin Nav -->
     <android.support.design.widget.NavigationView
@@ -99,7 +100,7 @@
                                     android:textSize="@dimen/pin_nav_text" />
                             </LinearLayout>
 
-                            <com.slopcat.pinbox.PinSelectButton
+                            <com.lemonclub.pinbox.ui.PinSelectButton
                                 android:id="@+id/pin_boxs"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -134,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <com.slopcat.pinbox.PinSelectButton
+                    <com.lemonclub.pinbox.ui.PinSelectButton
                         android:id="@+id/pin_home"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -144,7 +145,7 @@
                         app:text_color_normal="@color/pin_gray"
                         app:text_color_select="@color/pin_blue" />
 
-                    <com.slopcat.pinbox.PinSelectButton
+                    <com.lemonclub.pinbox.ui.PinSelectButton
                         android:id="@+id/pin_nows"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

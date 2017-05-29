@@ -60,7 +60,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/pin_post_status_msg"
+                android:id="@+id/pin_post_message"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="5dp"
@@ -69,26 +69,9 @@
                 android:paddingTop="@dimen/feed_item_status_pad_top"
                 android:text="Hello Hello Hello Hello\nMy name is Junseo Youn\nKorea Game Science High School" />
 
-            <TextView
-                android:id="@+id/pin_post_url"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:linksClickable="true"
-                android:paddingBottom="10dp"
-                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
-                android:paddingRight="@dimen/feed_item_status_pad_left_right"
-                android:textColorLink="@color/link" />
-
-            <ImageView
-                android:id="@+id/pin_post_feed_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:scaleType="fitXY"
-                android:visibility="visible" />
         </LinearLayout>
 
-        <!-- Post Comment -->
+        <!-- Post Comment
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,7 +95,6 @@
                 android:textSize="15dp" />
 
         </LinearLayout>
-
+        -->
     </LinearLayout>
-
 </LinearLayout>

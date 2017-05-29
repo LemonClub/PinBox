@@ -1,22 +1,20 @@
-package com.plancat.pinbox.activity
+package com.lemonclub.pinbox
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import android.content.Intent
-import com.plancat.pinbox.ui.PinSelectButton
-import com.plancatlog.pinbox.R
-import kotlinx.android.synthetic.main.activity_box_home.*
+import com.lemonclub.pinbox.ui.PinSelectButton
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.pin_header_ui.*
-
 
 class BoxHomeActivity : AppCompatActivity() {
     val pinboxSelectors = ArrayList<Any>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_box_home)
+        setContentView(R.layout.activity_home)
 
         pinboxSelectors.add(pin_boxs)
         pinboxSelectors.add(pin_home)
@@ -32,8 +30,6 @@ class BoxHomeActivity : AppCompatActivity() {
     fun initPinBox() {
         pin_write.setOnClickListener {
             pinBoxHide()
-            val intent = Intent(this, BoxWriteActivity::class.java)
-            startActivity(intent)
         }
         pin_boxs.setOnClickListener {
             pinBoxHide()

@@ -12,11 +12,9 @@
         <attr name="pin_left_text" format="reference|string" />
         <attr name="pin_left_color" format="reference|color" />
         <attr name="pin_left_active" format="reference|boolean" />
-
         <attr name="pin_right_text" format="reference|string" />
         <attr name="pin_right_color" format="reference|color" />
         <attr name="pin_right_active" format="reference|boolean" />
-
         <attr name="pin_underline" format="reference|boolean" />
     </declare-styleable>
 </resources>

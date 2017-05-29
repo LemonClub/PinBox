@@ -1,4 +1,4 @@
-package com.plancat.pinbox.ui
+package com.lemonclub.pinbox.ui
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.lemonclub.pinbox.R
 import kotlinx.android.synthetic.main.pin_select_button.view.*
-import com.plancatlog.pinbox.R
 
 /**
  * Created by slopcat99 on 2017-05-14.
@@ -44,28 +44,28 @@ open class PinSelectButton : android.widget.LinearLayout {
     fun initView() {
         val inflaterService = android.content.Context.LAYOUT_INFLATER_SERVICE
         val li = context.getSystemService(inflaterService) as android.view.LayoutInflater
-        val v = li.inflate(com.plancatlog.pinbox.R.layout.pin_select_button, this, false)
+        val v = li.inflate(R.layout.pin_select_button, this, false)
         this.addView(v)
         pinLine = pin_select_line
         pinText = pin_select_text
     }
 
     fun getAttrs(attrs: android.util.AttributeSet) {
-        val typedArray = context.obtainStyledAttributes(attrs, com.plancatlog.pinbox.R.styleable.PinSelectButton)
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.PinSelectButton)
         setTypeArray(typedArray)
     }
 
     fun getAttrs(attrs: android.util.AttributeSet, defStyle: Int) {
-        val typedArray = context.obtainStyledAttributes(attrs, com.plancatlog.pinbox.R.styleable.PinSelectButton, defStyle, 0)
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.PinSelectButton, defStyle, 0)
         setTypeArray(typedArray)
     }
 
     fun setTypeArray(typedArray: android.content.res.TypedArray) {
-        val text = typedArray.getString(com.plancatlog.pinbox.R.styleable.PinSelectButton_text)
-        val active = typedArray.getBoolean(com.plancatlog.pinbox.R.styleable.PinSelectButton_active, false)
+        val text = typedArray.getString(R.styleable.PinSelectButton_text)
+        val active = typedArray.getBoolean(R.styleable.PinSelectButton_active, false)
 
-        pinTextColorNormal = typedArray.getColor(com.plancatlog.pinbox.R.styleable.PinSelectButton_text_color_normal, 0)
-        pinTextColorSelect = typedArray.getColor(com.plancatlog.pinbox.R.styleable.PinSelectButton_text_color_select, 0)
+        pinTextColorNormal = typedArray.getColor(R.styleable.PinSelectButton_text_color_normal, 0)
+        pinTextColorSelect = typedArray.getColor(R.styleable.PinSelectButton_text_color_select, 0)
 
         setText(text)
         setActive(active)

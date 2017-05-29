@@ -28,6 +28,5 @@
             android:text="PIN"
             android:textColor="@color/pin_blue"
             android:textSize="15dp" />
-
     </FrameLayout>
 </LinearLayout>

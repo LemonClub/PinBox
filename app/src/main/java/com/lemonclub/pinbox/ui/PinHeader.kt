@@ -1,4 +1,4 @@
-package com.plancat.pinbox.ui
+package com.lemonclub.pinbox.ui
 
 
 import android.content.Context
@@ -8,8 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.lemonclub.pinbox.R
+import com.lemonclub.pinbox.R.id.*
 import kotlinx.android.synthetic.main.pin_header_ui.view.*
-import com.plancatlog.pinbox.R
 
 /**
  * Created by slopcat99 on 2017-05-16.
