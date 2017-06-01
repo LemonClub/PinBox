@@ -8,26 +8,41 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <!-- Pin UI -->
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <com.lemonclub.pinbox.ui.PinHeader
-            android:id="@+id/pin_header_home"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:pin_left_active="true"
-            app:pin_left_color="@color/pin_gray"
-            app:pin_left_text="메뉴"
-            app:pin_right_active="true"
-            app:pin_right_color="@color/pin_gray"
-            app:pin_right_text="검색"
-            app:pin_underline="false">
+            android:layout_height="wrap_content">
 
-        </com.lemonclub.pinbox.ui.PinHeader>
-    </RelativeLayout>
+            <com.lemonclub.pinbox.ui.PinHeader
+                android:id="@+id/pin_header_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pin_left_active="true"
+                app:pin_left_color="@color/pin_gray"
+                app:pin_left_text="메뉴"
+                app:pin_right_active="true"
+                app:pin_right_color="@color/pin_gray"
+                app:pin_right_text="검색"
+                app:pin_underline="false">
 
+            </com.lemonclub.pinbox.ui.PinHeader>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/feed_bg">
+
+            <ListView
+                android:id="@+id/pin_post_feed_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </LinearLayout>
+    </LinearLayout>
 
     <!-- Pin Nav -->
     <android.support.design.widget.NavigationView
@@ -101,12 +116,12 @@
                             </LinearLayout>
 
                             <com.lemonclub.pinbox.ui.PinSelectButton
-                                android:id="@+id/pin_boxs"
+                                android:id="@+id/pin_drawer"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 app:active="false"
-                                app:text="BOXs"
+                                app:text="서랍"
                                 app:text_color_normal="@color/pin_gray"
                                 app:text_color_select="@color/pin_blue" />
                         </LinearLayout>
@@ -151,7 +166,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         app:active="false"
-                        app:text="PINT 나우"
+                        app:text="박스"
                         app:text_color_normal="@color/pin_gray"
                         app:text_color_select="@color/pin_blue" />
 

@@ -12,10 +12,6 @@ import com.lemonclub.pinbox.R
 import com.lemonclub.pinbox.R.id.*
 import kotlinx.android.synthetic.main.pin_header_ui.view.*
 
-/**
- * Created by slopcat99 on 2017-05-16.
- */
-
 open class PinHeader : LinearLayout {
     var pinLeftText: TextView? = null
     var pinRightText: TextView? = null

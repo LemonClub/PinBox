@@ -8,8 +8,7 @@ import java.util.*
  *
  */
 
-data class PinTableData(
+data class PinPostData(
         var profileNickname: String,
-        var profileTimestamp: String,
-        var post_message: String,
-        var post_url_tag: String);
+        var postTimeStamp: String,
+        var postMessage: String)
