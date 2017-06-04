@@ -9,6 +9,5 @@ import java.util.*
  */
 
 data class PinPostData(
-        var profileNickname: String,
-        var postTimeStamp: String,
+        var profileName: String,
         var postMessage: String)
