@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/component_empty_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_edittext_form"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/component_empty_text"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_text_fields_black_24dp"
+            android:tint="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/component_empty_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_insert_photo_black_24dp"
+            android:tint="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/component_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="left|center"
+        android:hint="텍스트를 입력 해 주세요"
+        android:inputType="textMultiLine"
+        android:minHeight="40dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone" />
+</RelativeLayout>

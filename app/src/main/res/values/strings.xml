@@ -10,4 +10,10 @@
     <string name="action_bin_box">핀 박스</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>

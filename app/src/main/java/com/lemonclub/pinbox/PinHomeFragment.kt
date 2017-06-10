@@ -12,10 +12,6 @@ import com.lemonclub.pinbox.data.PinPostData
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class PinHomeFragment : Fragment() {
-    companion object {
-        fun newInstance(): PinHomeFragment = PinHomeFragment()
-    }
-
     val pinPostAdapter: PinPostAdapter
 
     lateinit var pinPostLayoutManager: LinearLayoutManager
